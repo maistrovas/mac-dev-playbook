@@ -1,0 +1,169 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: yes
+configure_sudoers: yes
+configure_terminal: yes
+configure_osx: yes
+
+dotfiles_repo: https://github.com/maistrovas/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/repositories/dotfiles
+dotfiles_files:
+  - .bash_profile
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - docker-compose
+  - autoconf
+  - bash-completion
+  - cassandra
+  - cython
+  - doxygen
+  - ffmpeg
+  - gettext
+  - graphviz
+  - gifsicle
+  - git
+  - go
+  - gpg
+  - hub
+  - httpie
+  - kite
+  - iperf
+  - libevent
+  - mcrypt
+  - mongodb
+  - mysql
+  - nmap
+  - node
+  - numpy
+  - nvm
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - redis
+  - openssl
+  - postgresql
+  - pyenv
+  - pyenv-virtualenv
+  - python
+  - python3
+  - pv
+  - sqlite
+  - terraform
+  - vault
+  - wget
+  - wrk
+  - zsh
+  - zsh-autosuggestions
+  - zsh-completions
+  - zsh-history-substring-search
+  - zsh-syntax-highlighting
+  - lastpass-cli
+
+homebrew_taps:
+  - homebrew/core
+  # - caskroom/cask # might be needed to install or create /usr/local/Cellar
+  - homebrew/services
+  # - homebrew/php
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - dropbox
+  # - fing # Download link keeps getting changed, d'oh!
+  - firefox
+  - google-chrome
+  - googleappengine
+  - macvim
+  - skitch
+  - slack
+  - sublime-text
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - handbrake
+  - licecap
+  - limechat
+  - transmit
+  - pycharm
+  - clion
+  - atom
+  - vlc
+  - sequel-pro
+  - alfred
+  - vagrant-manager
+  - eclipse-cpp
+  - flux
+  - rescuetime
+  - textexpander
+  - steam
+  - macs-fan-control
+  - gfxcardstatus
+  - geektool
+  - postman
+  - gitkraken
+  - cheatsheet
+  - blue-jeans
+  - metabase
+  - chromedriver
+  - quip
+  - iterm2
+
+
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - { id: 926036361, name: "LastPass Password Manager"}
+  - { id: 497799835, name: "Xcode" }
+  - { id: 1278508951, name: "Trello" }
+  - { id: 595191960, name: "CopyClip" }
+  - { id: 441258766, name: "Magnet" }
+  - { id: 585829637, name: "Todoist: Organize your life" }
+  - { id: 668208984, name: "GIPHY Capture. The GIF Maker" }
+  - { id: 1081413713, name: "GIF Brewery 3 by Gfycat" }
+  - { id: 1037126344, name: "Apple Configurator 2" }
+  - { id: 937984704, name: "Amphetamine" }
+  - { id: 816239782, name: "Joxi Screenshoter" }
+
+
+mas_email: "maistrovas@gmail.com"
+mas_password: { prompt: "Enter password please" }
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: [] 
+  # - name: webpack
+  # - name: drush
+  #   state: present # present/absent, default: present
+  #   version: "^8.1" # default: N/A
+gem_packages: []
+  # - name: bundler
+  #   state: present # present/absent/latest, default: present
+  #   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+  # - name: webpack
+  #   state: present # present/absent/latest, default: present
+  #   version: "^2.6" # default: N/A
+pip_packages: 
+  - name: mkdocs
+  # - name: mkdocs
+  #   state: present # present/absent/latest, default: present
+  #   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
+
+# Install manually
+# Pomello
+# Joxi
+# SQL Pro for postgres
+
